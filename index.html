@@ -12,7 +12,23 @@
       <div>
         <h1>TO-DO App</h1>
       </div>
+      <div id="inputData">
+        <form action="" class="taskForm">
+          <lab id="taskLabel">Input Tasks</lab>
+          <input type="text" id="taskInput" name="taskInput" method="POST" />
+          <button type="submit" id="submit">Add Task</button>
+          <button type="reset" name="resetForm">Reset</button>
+          <button type="submit" id="remove">Clear Completed Tasks</button>
+        </form>
+        <div id="taskList">
+          <h2>Task List</h2>
+          <ul id="taskItems"></ul>
+        </div>
+      </div>
     </main>
-    <script></script>
+    <script src="app.js"></script>
+    <script>
+      app.taskListStartup();
+    </script>
   </body>
 </html>
