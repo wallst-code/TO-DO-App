@@ -10,10 +10,18 @@ removeTasks.addEventListener('click', clearCompletedTasks);
 
 function addTaskItem(e) {
   e.preventDefault();
-  console.log('Add task test');
-  const li = document.createElement('li');
-  li.textContent = taskInput.value.toUpperCase();
-  taskItems.appendChild(li);
+
+  if (
+    taskInput.value === '' ||
+    taskInput.value === null ||
+    taskInput.value.length === 0
+  ) {
+    taskInput.value = '';
+  } else {
+    const li = document.createElement('li');
+    li.textContent = taskInput.value.toUpperCase();
+    taskItems.appendChild(li);
+  }
   taskInput.value = '';
 }
 
