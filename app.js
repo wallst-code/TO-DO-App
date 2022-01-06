@@ -1,5 +1,38 @@
-"use strict";
+'use strict';
 
-//1. Do I need an object? Is that adding anything?
-//2. Grab the input value.
-//3. put input value into the input list.
+const taskInput = document.querySelector('#taskInput');
+const taskItems = document.getElementById('taskItems');
+const addTask = document.getElementById('submit');
+const removeTasks = document.getElementById('remove');
+addTask.addEventListener('click', addTaskItem);
+taskList.addEventListener('click', completedTask);
+removeTasks.addEventListener('click', clearCompletedTasks);
+
+function addTaskItem(e) {
+  e.preventDefault();
+  console.log('Add task test');
+  const li = document.createElement('li');
+  li.textContent = taskInput.value.toUpperCase();
+  taskItems.appendChild(li);
+  taskInput.value = '';
+}
+
+function completedTask(e) {
+  e.preventDefault();
+  if (e.target.classList.contains('completed-task')) {
+    e.target.classList.remove('completed-task');
+  } else {
+    e.target.classList.add('completed-task');
+  }
+}
+
+function clearCompletedTasks(e) {
+  e.preventDefault();
+  const items = Array.from(taskItems.children);
+
+  items.forEach(el => {
+    if (el.classList.contains('completed-task')) {
+      taskItems.removeChild(el);
+    }
+  });
+}
