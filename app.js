@@ -4,8 +4,9 @@ const taskInput = document.querySelector('#taskInput');
 const taskItems = document.getElementById('taskItems');
 const addTask = document.getElementById('submit');
 const removeTasks = document.getElementById('remove');
+
 addTask.addEventListener('click', addTaskItem);
-taskList.addEventListener('click', completedTask);
+taskItems.addEventListener('click', markCompletedTask);
 removeTasks.addEventListener('click', clearCompletedTasks);
 
 function addTaskItem(e) {
@@ -22,16 +23,12 @@ function addTaskItem(e) {
     li.textContent = taskInput.value.toUpperCase();
     taskItems.appendChild(li);
   }
+
   taskInput.value = '';
 }
 
-function completedTask(e) {
-  e.preventDefault();
-  if (e.target.classList.contains('completed-task')) {
-    e.target.classList.remove('completed-task');
-  } else {
-    e.target.classList.add('completed-task');
-  }
+function markCompletedTask(e) {
+  e.target.classList.toggle('completed-task');
 }
 
 function clearCompletedTasks(e) {

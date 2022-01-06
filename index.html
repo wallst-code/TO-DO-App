@@ -9,22 +9,21 @@
   </head>
   <body>
     <main>
-      <div>
-        <h1>TO-DO App</h1>
-      </div>
-      <div id="inputData">
-        <form action="" class="taskForm">
-          <lab id="taskLabel">Input Tasks</lab>
-          <input type="text" id="taskInput" name="taskInput" method="POST" />
-          <button type="submit" id="submit">Add Task</button>
-          <button type="reset" name="resetForm">Reset</button>
-          <button type="submit" id="remove">Clear Completed Tasks</button>
-          <div id="taskList">
-            <h2>Task List</h2>
-            <ul id="taskItems"></ul>
-          </div>
-        </form>
-      </div>
+      <h1>🔨To-Do App</h1>
+      <form action="" class="taskForm">
+        <input
+          type="text"
+          id="taskInput"
+          name="taskInput"
+          placeholder="Enter your task"
+          method="POST"
+        />
+        <button type="submit" id="submit">➕ Add Task</button>
+        <button type="reset" name="resetForm">🧹 Clear Entry</button>
+        <button type="submit" id="remove">❌ Remove Completed Tasks</button>
+        <h2>Task List:</h2>
+        <ol id="taskItems"></ol>
+      </form>
     </main>
     <script src="app.js"></script>
     <script></script>
