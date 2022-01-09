@@ -16,6 +16,6 @@
 
 <h3>AUTHOR</h3>
 <ul>
-  <li>Senit Lutgen - Full Stack Software Developer - <a href="https://www.linkedin.com/in/senit-lutgen-442304227/">Senit's LinkedIn</a></li>
+  <li>Senit Lutgen - Full Stack Software Developer - <a href="https://www.linkedin.com/in/senit-lutgen-j-d-mba-442304227/">Senit's LinkedIn</a></li>
   
 </ul>
