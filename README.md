@@ -2,7 +2,6 @@
 <p>A to-do (task list) app built using HTML, CSS and JavaScript.<p> 
 <hr>
 
-
 <p>Check it out here: <a href="https://wallst-code.github.io/TO-DO-App/">To-do App</a><p>
 <img width="545" alt="SDMM TO-DO App" src="https://user-images.githubusercontent.com/69335472/148433691-f62bae92-a240-48de-baab-4740afb380db.png">
  <hr>
@@ -20,6 +19,3 @@
   <li>Senit Lutgen - Full Stack Software Developer - <a href="https://www.linkedin.com/in/senit-lutgen-442304227/">Senit's LinkedIn</a></li>
   
 </ul>
-
-
-
